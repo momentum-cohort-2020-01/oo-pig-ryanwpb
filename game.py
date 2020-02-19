@@ -23,8 +23,15 @@ class Player:
 
     def player_roll(self):
         choice = input("Would you like to (r)oll or (h)old? ")
-        print(choice)
-        return choice
+        if choice == "r":
+            print("You rolled a ", roll())
+            return choice
+
+
+class Computer:
+
+    def __init__(self):
+        self.points = 0
 
 
 # roll()
