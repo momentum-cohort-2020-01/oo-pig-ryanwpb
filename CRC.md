@@ -1,10 +1,8 @@
+Die can randomly be rolled and is it's own entity.
+
 Class: Game
 Responsibilties: Winner(score), score to total, turn, dice roll 1 switches players
 Collaborators: Die, Players turn, players score
-
-Class: Die
-Responsibilties: 6 sides, roll
-Collaborators: Game
 
 Class: Player
 Responsibilites: score, rolls to sum
