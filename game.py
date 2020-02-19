@@ -21,5 +21,12 @@ class Player:
     def __init__(self):
         self.points = 0
 
+    def player_roll(self):
+        choice = input("Would you like to (r)oll or (h)old? ")
+        print(choice)
+        return choice
 
-roll()
+
+# roll()
+player = Player()
+player.player_roll()
