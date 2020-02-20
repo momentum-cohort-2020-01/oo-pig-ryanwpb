@@ -3,7 +3,6 @@ import random
 
 def roll():
     die_score = random.choice([1, 2, 3, 3, 4, 5, 6])
-    print(die_score)
     return die_score
 
 
@@ -26,7 +25,7 @@ class Player:
         if choice == "r":
             print("You rolled a", roll())
         elif choice == "h":
-            print("You hold the Computer")
+            print("You hold to the Computer.")
             return choice
 
 
