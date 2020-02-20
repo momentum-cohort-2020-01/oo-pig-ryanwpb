@@ -11,7 +11,7 @@ class Game:
 
     # Initializer / Instance attributes
     def __init__(self, score):
-        self.score = score
+        self.score = {self.player: 0, self.computer: 0}
         self.player = Player()
 
 
@@ -24,7 +24,9 @@ class Player:
     def player_roll(self):
         choice = input("Would you like to (r)oll or (h)old? ")
         if choice == "r":
-            print("You rolled a ", roll())
+            print("You rolled a", roll())
+        elif choice == "h":
+            print("You hold the Computer")
             return choice
 
 
@@ -34,6 +36,6 @@ class Computer:
         self.points = 0
 
 
-# roll()
+roll()
 player = Player()
 player.player_roll()
